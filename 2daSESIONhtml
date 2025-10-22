@@ -1,0 +1,97 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> Mi segunda pagina</title>
+        <!-- Favicon -->
+    <!-- El favicon se especifica en la sección <head> utilizando la etiqueta <link> con los atributos rel="icon" y href="favicon.ico". -->
+    <link rel="icon" href="sitio-web.png"type="image/x-icon" />
+
+
+
+    </head>
+
+    <!-- Encabezado -->
+    <!-- El encabezado contiene el título de la página y una barra de navegación con enlaces a diferentes secciones de la página. -->
+    <header>
+        <h1>Mi Página Estructurada</h1>
+        <div>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+ <!-- Contenedor Principal -->
+    <!-- Envuelve las secciones principales del contenido. Utiliza la clase "container" para aplicar estilos de forma más sencilla. -->
+    <div class="container">
+        <!-- Sección de Inicio -->
+        <!-- Cada sección tiene un identificador único (id) para facilitar la navegación mediante los enlaces del encabezado. -->
+        <div id="inicio">
+            <h2>Inicio</h2>
+            <p>Bienvenido a mi página web. Aquí encontrarás información sobre diversos temas.</p>
+        </div>
+        <!-- Sección Sobre -->
+        <div id="sobre">
+            <h2>Sobre</h2>
+            <p>Esta es una página web de ejemplo creada para aprender sobre la estructura de HTML.</p>
+        </div>
+        <!-- Sección de Contacto -->
+        <div id="contacto">
+            <h2>Contacto</h2>
+            <p>Puedes contactarme a través del correo: ana.fernandezndezfernandez@educa.madrid.org</p>
+        </div>
+    </div>
+<!-- Pie de Página -->
+    <!-- Contiene un mensaje de derechos reservados. -->
+    <footer>
+        <p>&copy; 2025 web ana.fernandezfernandez. Todos los derechos reservados.</p>
+    </footer>
+    71610966
+    <body>
+
+        <form action="/submit" method="post">
+            <!-- Campo de texto -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre"><br><br>
+    
+            <!-- Campo de correo electrónico -->
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Ingresa tu correo"><br><br>
+    
+            <!-- Área de texto -->
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50"
+                placeholder="Escribe tu mensaje aquí"></textarea><br><br>
+    
+            <!-- Lista desplegable -->
+            <label for="pais">País:</label>
+            <select id="pais" name="pais">
+                <option value="es">España</option>
+                <option value="mx">México</option>
+                <option value="ar">Argentina</option>
+            </select><br><br>
+    
+            <!-- Casillas de verificación -->
+            <label>Intereses:</label><br>
+            <label><input type="checkbox" name="intereses" value="musica"> Música</label><br>
+            <label><input type="checkbox" name="intereses" value="deportes"> Deportes</label><br>
+            <label><input type="checkbox" name="intereses" value="lectura"> Lectura</label><br><br>
+    
+            <!-- Botones de radio -->
+            <label>Género:</label><br>
+            <label><input type="radio" name="genero" value="masculino"> Masculino</label><br>
+            <label><input type="radio" name="genero" value="femenino"> Femenino</label><br>
+            <label><input type="radio" name="genero" value="otro"> Otro</label><br><br>
+    
+            <!-- Botón de envío -->
+            <button type="submit">Enviar</button>
+        </form>
+    
+    </body>
+    
+
+</html>
